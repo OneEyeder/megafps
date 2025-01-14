@@ -1,0 +1,313 @@
+body {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+
+.burger-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 25px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.burger-line {
+    width: 100%;
+    height: 3px;
+    background-color: black;
+}
+
+.nav-menu {
+    display: none;
+}
+
+.nav-menu.active {
+    display: block;
+    position: absolute;
+   
+    background-color: #3e3e3e;
+    border-radius: 5px;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+
+.nav-list li {
+    margin: 10px 0;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+.nav-menu.active {
+    padding-inline: 10px;
+}
+
+.header {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    background-color: #D9D9D9;
+}
+
+main {
+    background-color: black;
+}
+
+.container--mobile {
+    max-width: 386px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto; 
+
+}
+
+.h1--mobile {
+    color: white;
+    margin: 0;
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.h2--mobile {
+    color: white;
+    margin: 0;
+    font-size: 25px;
+    font-weight: 900;
+}
+
+.h2--mobile--var2 {
+    color: #D43C38;
+    margin: 0;
+    font-size: 25px;
+    font-weight: 900;
+}
+
+
+.h3--mobile {
+    color: #D43C38;
+    margin: 0;
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.section1--image {
+    width: 80%;
+    height: 80%;
+    margin: 0 auto;
+}
+
+.paragraph--mobile {
+    color: white;
+    
+}
+
+.section1--mobile {
+    padding-top: 100px;
+}
+
+.section2--image {
+    padding-top: 20px;
+    position: relative;
+}
+
+.section3--mobile {
+    padding-top: 50px;
+}
+
+.slider {
+    position: relative;
+    width: 100%;
+    max-width: 700px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.slides img {
+    width: 100%;
+    flex: 0 0 100%;
+    transition: transform 0.5s;
+
+}
+
+.prev {
+    left: 10px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.next {
+    right: 10px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.features {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Расстояние между элементами */
+
+}
+
+.feature {
+    display: flex;
+    align-items: center; /* Выравнивание текста и иконки по вертикали */
+    gap: 8px; /* Расстояние между текстом и иконкой */
+}
+
+
+.feature-icon {
+    width: 20px; /* Размер иконки */
+    height: 20px;
+    flex-shrink: 0; /* Чтобы иконка не сжималась */
+
+}
+
+.section4--mobile {
+    padding-top: 70px;
+}
+
+.section4--image {
+    width: 90%;
+    height: 90%;
+    margin: 0 auto;
+} 
+.Feedback{
+    margin-left: 127px;
+    margin-top: 25px;
+}
+
+.button_feed {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    font-family: "Poppins", sans-serif;
+    font-size: 24px;
+    transition: all 0.3s ease;
+    font-weight: 800;
+
+}
+
+.button_feed:hover {
+    background-color: #d43c38;
+    transform: scale(1.1);
+}
+
+.section5--mobile {
+    padding-top: 60px;
+    background-image: url(./assets/img/section5--background.png);
+}
+
+
+.form2 {
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto; /* Центрирование формы */
+    padding-block: 30px;
+    padding-inline: 50px;
+    border-radius: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Небольшая тень */
+    border: 1px solid rgba(255,255,255,0.3);
+}
+
+.form-control {
+    color: white;
+    background: transparent;
+    width: 100%;
+    padding: 10px 0px 10px 0px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    font-size: 15px;
+}
+
+.form-control:focus {
+    border-color: #d43c38;
+    outline: none;
+}
+
+textarea.form-control {
+    resize: none; /* Убирает возможность изменять размер текстового поля */
+}
+
+.btn-success {
+    margin-left: 0px;
+    padding: 10px !important;
+    background-color: #333 !important;
+    color: white !important;
+    border: none !important;
+    border-radius: 10px !important;
+    cursor: pointer !important;
+    font-size: 16px !important;
+    transition: all 0.3s ease !important;
+}
+
+.btn-success:hover {
+    background-color: #d43c38 !important;
+    transform: scale(1.1) !important;
+    color: white !important;
+}
+.contactForm {
+    margin: 0;
+}
+
+.section6--mobile {
+    padding-top: 30px;
+    padding-bottom: 70px;
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+}
+
+footer p {
+    padding-bottom: 10px;
+    color: white;
+    margin: 0;
+}
+.footer--link {
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    font-weight: 900;
+}
