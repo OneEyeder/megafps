@@ -1,3 +1,6 @@
+html {
+    scroll-behavior: smooth;
+}
 body {
     margin: 0;
     box-sizing: border-box;
@@ -73,6 +76,7 @@ main {
     display: flex;
     flex-direction: column;
     margin: 0 auto; 
+    padding-inline: 15px;
 
 }
 
@@ -118,6 +122,7 @@ main {
 
 .section1--mobile {
     padding-top: 100px;
+    padding-bottom: 60px;
 }
 
 .section2--image {
